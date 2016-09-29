@@ -1,22 +1,15 @@
 {
   "name": "BamazonCustomer",
-  "version": "0.0001"
-  "description": "week12",
+  "version": "1.0.0",
+  "description": "",
   "main": "BamazonCustomer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jclarc/week12.git"
-  },
-  "author": "Jake",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jclarc/week12/issues"
-  },
   "dependencies": {
-    "inquirer": "^1.1.3",
-    "mysql": "^2.11.1"
+    "mysql": "^2.10.2",
+    "prompt": "^1.0.0"
   }
 }
