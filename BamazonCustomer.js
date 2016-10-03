@@ -65,7 +65,7 @@ connection.query('SELECT * FROM products', function(err, rows){
         console.log(rows[i].ItemID + '\t' + rows[i].ProductName + '\t\t$' + rows[i].Price + '\t');
     }
 
-    console.log("\nWhat would you like to order?\nEnter the item ID number and a quantity.");
+    console.log("\nWhat would you like to order? \nEnter the item ID number and a quantity.");
 
     prompt.start();
 
@@ -78,8 +78,7 @@ connection.query('SELECT * FROM products', function(err, rows){
             if(product[0].StockQuantity >= quant) {
                 var secondQuant = product[0].StockQuantity - quant;
                 connection.query('UPDATE products SET StockQuantity = "' + secondQuant + '" WHERE ItemID = "' + ID + '"', function(err, result) {
-                    if(err)
-                    {
+                    if(err) {
                         throw err;
                     }
                 });
